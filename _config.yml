@@ -1,0 +1,29 @@
+#markdown: kramdown
+markdown: redcarpet
+highlighter: redcarpet
+permalink: blog/:year/:month/:day/:title.html
+paginate: 6
+# pygments: true
+paginate_path: page/:num
+gems: ['jekyll-paginate','redcarpet']
+
+# heroku
+# exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+
+blog:
+    name: cuizixin                                                # 博客名称
+    description:                                          # 博客描述
+    title: cxy229'blog                                                # 网页标题
+    url:                                                 # 博客地址
+    duoshuo: cxy229  # 多说ID
+    tongji:  3ae657959e8611568ba7987f47b5b6db # 百度统计ID
+    qiniu:         # 七牛云地址
+author:
+    name: cxy229 # 作者名称
+    email: cxyxs229@gmail.com # 邮箱地址
+    weibo: # 微博地址
+    github: https://github.com/cxy229 # GitHub地址
+    logo: http://7xqql4.com1.z0.glb.clouddn.com/ico.jpg # logo地址
+  #  douban:
+  #      name: cxy229                                            # 豆瓣地址名称
+  #      key:                                             # 豆瓣API Key

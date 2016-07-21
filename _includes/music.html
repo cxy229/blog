@@ -1,0 +1,40 @@
+
+<!-- <a id="music-control" href="javascript:;" onclick="toggleMusicPanel()" target="_blank" style="display: block;
+position: fixed;
+bottom: 10px;
+left: 10px;
+-webkit-border-radius: 25px;
+border-radius: 25px;
+background: url("/res/img/favicon.ico");
+background-color: #D0648A;
+-webkit-transition: 1sec;
+transition: 1sec;
+transform: translateZ(0);
+-webkit-transform: translateZ(0);"><img src="/res/img/music.png" height="50" width="50" /></a> -->
+<nav id="sub-nav">
+    <a id="music-control" href="javascript:;" onclick="toggleMusicPanel()" target="_blank" style="position: fixed;bottom: 10px;left: 10px;height=50px; width=50px;
+    color: ##EFEFEF;
+    background: #D0648A;
+    line-height: 25px; padding-right: 2px;
+    padding-top: 6px;"><i class="fa fa-music" aria-hidden="true"></i></a>
+</nav>
+<div id="music-panel">
+  <span style="display:inline;
+  position: fixed;
+  bottom: 10px;
+  left: 50px;">
+    <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="http://music.163.com/outchain/player?type=0&amp;id=49176408&amp;auto=0&amp;height=430"></iframe> -->
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=426852594&auto=0&height=430"></iframe>
+  </span>
+</div>
+
+<script type="text/javascript">
+function toggleMusicPanel(){
+  if(document.getElementById("music-panel").style.display != "none"){
+    document.getElementById("music-panel").style.display="none";
+  }else{
+    document.getElementById("music-panel").style.display="inline";
+  }
+}
+toggleMusicPanel();
+</script>
