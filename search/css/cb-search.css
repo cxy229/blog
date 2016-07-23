@@ -12,7 +12,7 @@
                     float: none !important;
                     width: 100%;
                     a{
-                        
+
                         word-break:normal;
                         font-size: 13px !important;
                     }
@@ -22,8 +22,12 @@
 			.search-tool ul{
                 word-break:normal;
                  overflow:hidden;
+								 background-color: #fff;
+								 position: fixed;
+								 /*left: 310px;*/
+
              }
-        
+
             .search-content {
                 width: 367px;
                 font-size: 22px;
@@ -43,7 +47,7 @@
                 }
                 width: 200px;
             }
-			.search-tool ul{ 
+			.search-tool ul{
 				word-break:normal;
                 li a{
                     word-break:normal;

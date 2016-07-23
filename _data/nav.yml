@@ -2,9 +2,9 @@
   icon: fa fa-clock-o
   title: 时间轴
 
-- href: /page/search.html
-  icon: fa fa-search
-  title: 搜索
+# - href: /page/search.html
+#   icon: fa fa-search
+#   title: 搜索
 
 - href: /page/category.html
   icon: fa fa-tag

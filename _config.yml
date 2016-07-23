@@ -12,7 +12,7 @@ gems: ['jekyll-paginate','redcarpet']
 
 blog:
     name: cuizixin                                                # 博客名称
-    description:                                          # 博客描述
+    description: 淡泊明志，宁静致远                                      # 博客描述
     title: cxy229'blog                                                # 网页标题
     url:                                                 # 博客地址
     duoshuo: cxy229  # 多说ID
@@ -27,3 +27,4 @@ author:
   #  douban:
   #      name: cxy229                                            # 豆瓣地址名称
   #      key:                                             # 豆瓣API Key
+# scp -r _site/ git@115.28.237.42:/home/git/web/myblog
