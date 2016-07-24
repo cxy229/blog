@@ -1,11 +1,11 @@
-#markdown: kramdown
-markdown: redcarpet
-highlighter: redcarpet
+markdown: kramdown
+# markdown: redcarpet
+highlighter: kramdown
 permalink: blog/:year/:month/:day/:title.html
 paginate: 6
 # pygments: true
 paginate_path: page/:num
-gems: ['jekyll-paginate','redcarpet']
+gems: ['jekyll-paginate','kramdown']
 
 # heroku
 # exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
