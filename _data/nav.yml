@@ -25,6 +25,10 @@
 - href: /page/dict.html
   icon:  fa fa-book
   title: 词典
+  
+- href: life.html
+  icon: fa fa-clock-o
+  title: 生活
 
 - href: /page/about.html
   icon: fa fa-paper-plane-o
