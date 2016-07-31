@@ -9,14 +9,16 @@ tags       : [notes]
 #!/usr/bin/env python3
 # -*- coding:UTF-8 -*-
 ```
-###用作calculator
-####运算符
+
+### 用作calculator
+
+#### 运算符
 >//
 >**
 
 _  ＃最后一次表达式的值
-####字符串
-* r  #raw strings
+#### 字符串
+* `r  #raw strings`
 
 ```python
 >>> print('C:\some\name')  # here \n means newline!
@@ -25,6 +27,7 @@ ame
 >>> print(r'C:\some\name')  # note the r before the quote
 C:\some\name
 ```
+
 * """..."""or'''...'''
 
 ```python
@@ -47,6 +50,7 @@ Usage: thingy [OPTIONS]
 >>> word[2:5]  # characters from position 2 (included) to 5 (excluded)
 'tho'
 ```
+
 * len()
 
 ```python
@@ -54,7 +58,8 @@ Usage: thingy [OPTIONS]
 >>> len(s)
 34
 ```
-####列表
+
+#### 列表
 * list
  * index
  * slice
@@ -76,7 +81,8 @@ l = [1,2,3,4,1,5]
 l2 = []
 [l2.append(i) for i in l if i not in l2]
 ```
-####print()
+
+#### print()
  * print()
 
 ```python
