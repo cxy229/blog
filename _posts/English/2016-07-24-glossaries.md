@@ -4,8 +4,13 @@ title      : glossaries
 categories : [English]
 tags       : [notes]
 ---
+### 改用词典的生词本功能了
+### 2016-08-05
+- NP（Non-Deterministic Polynomial, 非确定多项式）问题
+
 ### 2016-08-01
 - clustering 聚类
+
 ### 2016-05-20
 
 - fundamental 基本的
