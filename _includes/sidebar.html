@@ -9,7 +9,9 @@
     {% for nav in site.data.nav %}
       <li><a href="{{ nav.href }}"{% if nav.newblank == true %}target="_blank"{% endif %}>
       <i class="{{ nav.icon }}"></i>&nbsp;{{ nav.title }}</a></li>
-      <li><i class="fa fa-bullhorn"></i><a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+   
+    {% endfor%}
+	<li><i class="fa fa-bullhorn"></i><a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
 	function c() {
 		var e = document.createElement("link");
 		e.setAttribute("type", "text/css");
@@ -159,7 +161,6 @@
 		}
 	}
 })()'>High一下</a></li>
-    {% endfor%}
     </ul>
   </nav>
   <nav id="sub-nav">
