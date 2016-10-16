@@ -5,6 +5,8 @@ categories : [python]
 tags       : [notes]
 ---
 
+### 初学python时做的笔记
+
 ```python
 #!/usr/bin/env python3
 # -*- coding:UTF-8 -*-
