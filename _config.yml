@@ -12,7 +12,7 @@ gems: ['jekyll-paginate','kramdown']
 
 blog:
     name: cuizixin                                                # 博客名称
-    description: 淡泊明志，宁静致远<br>行胜于言，敢为人先                                      # 博客描述
+    description: 取乎其上，敢为人先                                      # 博客描述
     title: cxy229'blog                                                # 网页标题
     url:                                                 # 博客地址
     duoshuo: cxy229  # 多说ID
