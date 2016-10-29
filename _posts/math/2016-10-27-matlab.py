@@ -7,6 +7,7 @@ tags       : [notes]
 
 ### 资料
 - [官方自带教程](https://cn.mathworks.com/help/matlab/getting-started-with-matlab.html)
+- [Andrew N.G machine learning matlab tutorial](https://www.coursera.org/learn/machine-learning/resources/QQx8l)
 
 ### tips
 
@@ -118,5 +119,3 @@ else ,
 end;
 ```
 
-
-```
