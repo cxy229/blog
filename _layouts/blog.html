@@ -13,9 +13,14 @@
   <link rel="shortcut icon" href="/res/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/res/css/public.css">
   <link rel="stylesheet" href="/res/css/light.css">
-
   <script src="/res/js/light.js"></script>
-
+  
+  <!-- Load jQuery -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+  
   {% include tongji.html %}
   {% if page.encrypt == true %}{% include encrypt.html %}{% endif %}
 
