@@ -14,10 +14,10 @@ title: 文章分类
       {% assign mysize = 0 %}
       test: size = {{mysize}}
       {% for post in site.categories[word] %}{% if post.title != null and post.life != true %}
-        {% mysize = mysize+1 %}
+        {% assign mysize = 1 %}
       {% endif %}{% endfor %}
-      {% if size > 0 %}
-      <li class="category-box-sub"><a href="#{{ word }}">{{ word }}&nbsp;<sup>{{ mysize }}</sup></a></li>
+      {% if mysize > 0 %}
+      <li class="category-box-sub"><a href="#{{ word }}">{{ word }}&nbsp;<sup>{{ site.categories[word].size }}</sup></a></li>
       {% endif %}
     {% endunless %}{% endfor %}
   </ul>
