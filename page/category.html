@@ -11,12 +11,12 @@ title: 文章分类
   <ul>
     {% for item in (0..site.categories.size) %}{% unless forloop.last %}
       {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-      {% assign mysize = 0 %}
-      test: size = {{mysize}}
+      {% assign isShow = false %}
       {% for post in site.categories[word] %}{% if post.title != null and post.life != true %}
-        {% assign mysize = 1 %}
+        {% assign isShow = true %}
+        {% break %}
       {% endif %}{% endfor %}
-      {% if mysize > 0 %}
+      {% if isShow %}
       <li class="category-box-sub"><a href="#{{ word }}">{{ word }}&nbsp;<sup>{{ site.categories[word].size }}</sup></a></li>
       {% endif %}
     {% endunless %}{% endfor %}
