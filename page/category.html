@@ -11,7 +11,13 @@ title: 文章分类
   <ul>
     {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-    <li class="category-box-sub"><a href="#{{ word }}">{{ word }}&nbsp;<sup>{{ site.categories[word].size }}</sup></a></li>
+    {% assign size = 0 %}
+    {% for post in site.categories[word] %}{% if post.title != null and post.life != true %}
+    {% size = size+1 %}
+    {% endif %}{% endfor %}
+    {% if size > 0 %}
+    <li class="category-box-sub"><a href="#{{ word }}">{{ word }}&nbsp;<sup>{{ size }}</sup></a></li>
+    {% endif %}
     {% endunless %}{% endfor %}
   </ul>
 </div>
