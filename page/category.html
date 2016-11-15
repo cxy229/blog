@@ -11,7 +11,8 @@ title: 文章分类
   <ul>
     {% for item in (0..site.categories.size) %}{% unless forloop.last %}
       {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-      {% capture size %}{{ 0 }}{% endcapture %}
+      {% assign size = 0 %}
+      test: size = {{size}}
       {% for post in site.categories[word] %}{% if post.title != null and post.life != true %}
         {% size = size+1 %}
       {% endif %}{% endfor %}
