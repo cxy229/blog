@@ -25,9 +25,16 @@ title: 文章分类
 <hr id="line"/>
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-<h2 class="category" id="{{ word }}">{{ word }}</h2>
-{% for post in site.categories[word] %}{% if post.title != null and post.life != true %}
-<ul><li class="category-sub">{{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a class="category-sub-title" href="{{ post.url }}">{{ post.title }}</a></li></ul>
-{% endif %}{% endfor %}
+      {% assign isShow = false %}
+      {% for post in site.categories[word] %}{% if post.title != null and post.life != true %}
+        {% assign isShow = true %}
+        {% break %}
+      {% endif %}{% endfor %}
+      {% if isShow %}
+      <h2 class="category" id="{{ word }}">{{ word }}</h2>
+      {% for post in site.categories[word] %}{% if post.title != null and post.life != true %}
+        <ul><li class="category-sub">{{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a class="category-sub-title" href="{{ post.url }}">{{ post.title }}</a></li></ul>
+      {% endif %}{% endfor %}
+      {% endif %}
 {% endunless %}{% endfor %}
 <br/><br/>
