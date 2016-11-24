@@ -14,14 +14,14 @@ gems: ['jekyll-paginate','kramdown']
 
 blog:
     name: cuizixin                                                # 博客名称
-    description: 取乎其上，敢为人先                                      # 博客描述
-    title: cxy229'blog                                                # 网页标题
+    description: 取乎其上，脚踏实地                                      # 博客描述
+    title: czx229'blog                                                # 网页标题
     url:                                                 # 博客地址
     duoshuo: cxy229  # 多说ID
     tongji:  3ae657959e8611568ba7987f47b5b6db # 百度统计ID
     qiniu:         # 七牛云地址
 author:
-    name: cxy229 # 作者名称
+    name: czx229 # 作者名称
     email: cxyxs229@gmail.com # 邮箱地址
     weibo: # 微博地址
     github: https://github.com/cxy229 # GitHub地址
