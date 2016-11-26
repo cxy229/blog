@@ -12,7 +12,7 @@ tags       : [notes]
 ```
 - `timing: false` 默认文章在时间轴页面显示, false为不显示
 - `life: true` 若life为true，文章改在生活页面显示
-- `permalink: /life.html` 修改文章URL为固定URL
+- `permalink: /life.html` 修改文章URL为自定义URL
 
 ### 添加图片
 - 例如
