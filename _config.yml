@@ -3,9 +3,9 @@ kramdown:
   math_engine: mathjax
 # markdown: redcarpet
 highlighter: rouge
-# permalink: blog/:year/:month/:day/:title.html
+permalink: blog/:year/:month/:day/:title.html
 # permalink: /:categories/:title.html
-permalink: pretty
+# permalink: pretty
 paginate: 6
 # pygments: true
 paginate_path: page/:num
