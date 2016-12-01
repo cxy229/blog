@@ -1,7 +1,7 @@
 ---
 layout     : post
 title      : sqlalchemy
-categories : [English]
+categories : [sql]
 tags       : [notes]
 ---
 

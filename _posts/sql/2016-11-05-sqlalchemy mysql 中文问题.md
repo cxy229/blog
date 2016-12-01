@@ -1,7 +1,7 @@
 ---
 layout     : post
 title      : sqlalchemy mysql 中文问题
-categories : [sqlalchemy]
+categories : [sql]
 tags       : [notes]
 ---
 

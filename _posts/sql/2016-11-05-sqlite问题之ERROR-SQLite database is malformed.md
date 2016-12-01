@@ -1,7 +1,7 @@
 ---
 layout     : post
-title      : sqlite问题之ERROR: SQLite database is malformed.md
-categories : [sqlite]
+title      : sqlite ERROR SQLite database is malformed
+categories : [sql]
 tags       : [notes]
 ---
 
