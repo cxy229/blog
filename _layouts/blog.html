@@ -36,9 +36,25 @@
     </div>
   </div>
   <div id="top"><a id="rocket" href="javascript:;" title="返回顶部"><i></i></a></div>
-<!--   {% if page.math == true %}<script src="http://cdn.bootcss.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>MathJax.Hub.Config({tex2jax:{inlineMath: [['\[','\]']],displayMath: [['$$','$$']]}});</script>{% endif %} -->
+<!--   <script src="http://cdn.bootcss.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>MathJax.Hub.Config({tex2jax:{inlineMath: [['\[','\]']],displayMath: [['$$','$$']]}});</script> -->
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+       }
+     });
+ 
+     MathJax.Hub.Queue(function() {
+         var all = MathJax.Hub.getAllJax(), i;
+         for(i=0; i < all.length; i += 1) {
+             all[i].SourceElement().parentNode.className += ' has-jax';
+         }
+     });
+ </script>      
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
   {% include search.html %}
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $("script[type='math/tex']").replaceWith(
   function(){
     var tex = $(this).text();
@@ -54,6 +70,6 @@ $("script[type='math/tex; mode=display']").replaceWith(
            katex.renderToString("\\displaystyle "+tex) +
            "</div>";
 });
-</script>
+</script> -->
 </body>
 </html>
