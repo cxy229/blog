@@ -16,8 +16,8 @@ tags       : [notes]
 
 ### 添加图片
 - 例如
-`<br><img src="http://7xqql4.com1.z0.glb.clouddn.com/b22dabc5b72748509379fd2c7837dfcd.png" height="400"><br>`
-<br><img src="http://7xqql4.com1.z0.glb.clouddn.com/b22dabc5b72748509379fd2c7837dfcd.png" height="400"><br>
+`<br><img src={{ site.blog.qiniu }}"b22dabc5b72748509379fd2c7837dfcd.png" height="400"><br>`
+<br><img src={{ site.blog.qiniu }}"b22dabc5b72748509379fd2c7837dfcd.png" height="400"><br>
 
 ### 支持`LaTeX`
 
