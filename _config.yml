@@ -21,7 +21,7 @@ blog:
     url:                                                 # 博客地址
     duoshuo: cxy229  # 多说ID
     tongji:  3ae657959e8611568ba7987f47b5b6db # 百度统计ID
-    qiniu:         # 七牛云地址
+    qiniu: http://7xqql4.com1.z0.glb.clouddn.com/        # 七牛云地址
 author:
     name: czx229 # 作者名称
     email: cxyxs229@gmail.com # 邮箱地址
