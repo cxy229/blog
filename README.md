@@ -16,9 +16,9 @@ tags       : [notes]
 
 ### 添加图片
 - 例如
-{{ site.blog.qiniu }}
+<p>{{ site.blog.qiniu }}</p>
 `<br><img src={{ site.blog.qiniu }}"b22dabc5b72748509379fd2c7837dfcd.png" height="400"><br>`
-<br><img src={{ site.blog.qiniu }}+"b22dabc5b72748509379fd2c7837dfcd.png" height="400"><br>
+<br><img src={{ site.blog.qiniu }}"b22dabc5b72748509379fd2c7837dfcd.png" height="400"><br>
 
 ### 支持`LaTeX`
 
