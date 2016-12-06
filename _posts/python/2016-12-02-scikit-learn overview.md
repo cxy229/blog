@@ -85,6 +85,7 @@ scaling_pipeline = Pipeline([
 - VarianceThreshold： 删除特征值的方差达不到最低标准的特征
 - SelectKBest： 返回k个最佳特征
 - SelectPercentile： 返回表现最佳的前r%个特征
+<br>
 
 单个特征和某一类别之间相关性的计算方法有很多。最常用的有卡方检验（χ2）。其他方法还有互信息和信息熵。
 - chi2: 卡方校验
@@ -160,6 +161,7 @@ scaling_pipeline = Pipeline([
 - LeavePOut：LeavePOut交叉验证迭代器
 - LeaveOneLableOut：LeaveOneLableOut交叉验证迭代器
 - LeavePLabelOut：LeavePLabelOut交叉验证迭代器
+<br>
 LeaveOneOut(n) 相当于 KFold(n, n_folds=n) 相当于LeavePOut(n, p=1)。
 LeaveP和LeaveOne差别在于leave的个数，也就是测试集的尺寸。LeavePLabel和LeaveOneLabel差别在于leave的Label的种类的个数。
 LeavePLabel这种设计是针对可能存在第三方的Label，比如我们的数据是一些季度的数据。那么很自然的一个想法就是把1,2,3个季度的数据当做训练集，第4个季度的数据当做测试集。这个时候只要输入每个样本对应的季度Label，就可以实现这样的功能。
