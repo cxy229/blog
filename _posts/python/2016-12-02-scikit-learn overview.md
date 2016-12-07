@@ -66,6 +66,26 @@ scaling_pipeline = Pipeline([
 `sklearn.feature_extraction`
 
 - DictVectorizer： 将dict类型的list数据，转换成numpy array
+
+```python
+>>> measurements = [
+...     {'city': 'Dubai', 'temperature': 33.},
+...     {'city': 'London', 'temperature': 12.},
+...     {'city': 'San Fransisco', 'temperature': 18.},
+... ]
+
+>>> from sklearn.feature_extraction import DictVectorizer
+>>> vec = DictVectorizer()
+
+>>> vec.fit_transform(measurements).toarray()
+array([[  1.,   0.,   0.,  33.],
+       [  0.,   1.,   0.,  12.],
+       [  0.,   0.,   1.,  18.]])
+
+>>> vec.get_feature_names()
+['city=Dubai', 'city=London', 'city=San Fransisco', 'temperature']
+```
+
 - FeatureHasher ： 特征哈希，相当于一种降维技巧
 - image：图像相关的特征抽取
 - text： 文本相关的特征抽取
