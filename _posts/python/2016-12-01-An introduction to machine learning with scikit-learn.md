@@ -5,6 +5,8 @@ categories : [python]
 tags       : [notes]
 ---
 
+- [原文](http://scikit-learn.org/stable/tutorial/basic/tutorial.html)
+
 ## Machine learning: the problem setting
 
 ### supervised learning
