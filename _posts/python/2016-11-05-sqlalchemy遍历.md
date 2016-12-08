@@ -1,7 +1,7 @@
 ---
 layout     : post
-title      : sqlalchemy
-categories : [sql]
+title      : sqlalchemy遍历
+categories : [python]
 tags       : [notes]
 ---
 
