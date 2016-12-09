@@ -312,7 +312,42 @@ SQL>>> query.all()
 
 ### using textual SQL
 
+#### `from_statemnet(text())`
+
+```python
+>>> session.query(User).from_statement(
+...                     text("SELECT * FROM users where name=:name")).\
+...                     params(name='ed').all()
+[<User(name='ed', fullname='Ed Jones', password='f8s7ccs')>]
+```
+
+#### `.columns()`
+
+```python
+>>> stmt = text("SELECT name, id, fullname, password "
+...             "FROM users where name=:name")
+>>> stmt = stmt.columns(User.name, User.id, User.fullname, User.password)
+SQL>>> session.query(User).from_statement(stmt).params(name='ed').all()
+[<User(name='ed', fullname='Ed Jones', password='f8s7ccs')>]
+```
+
 ### counting 
+
+```python
+>>> session.query(User).filter(User.name.like('%ed')).count()
+2
+```
+
+```python
+>>> from sqlalchemy import func
+SQL>>> session.query(func.count(User.name), User.name).group_by(User.name).all()
+[(1, u'ed'), (1, u'fred'), (1, u'mary'), (1, u'wendy')]
+```
+
+```python
+>>> session.query(func.count('*')).select_from(User).scalar()
+4
+```
 
 ## building a realationship
 
