@@ -18,7 +18,7 @@ blog:
     name: cuizixin                                                # 博客名称
     description: 取乎其上，脚踏实地                                      # 博客描述
     title: czx229'blog                                                # 网页标题
-    url:                                                 # 博客地址
+    url:  www.cuizixin.top                                               # 博客地址
     duoshuo: cxy229  # 多说ID
     tongji:  3ae657959e8611568ba7987f47b5b6db # 百度统计ID
     qiniu: http://7xqql4.com1.z0.glb.clouddn.com/        # 七牛云地址
