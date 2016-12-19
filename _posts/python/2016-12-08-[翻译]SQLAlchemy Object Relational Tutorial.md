@@ -1,6 +1,6 @@
 ---
 layout     : post
-title      : (翻译)SQLAlchemy Object Relational Tutorial
+title      : [翻译]SQLAlchemy Object Relational Tutorial
 categories : [python]
 tags       : [notes]
 ---
