@@ -1,4 +1,5 @@
 个人博客
+项目已废弃
 - 网址 [www.cuizixin.top](http://www.cuizixin.top)
 
 ### post格式
